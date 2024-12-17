@@ -1,19 +1,42 @@
 {
   "name": "koishi-plugin-how-to-cook",
   "description": "Get random recipes & learn how to cook it",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "koishi": {
+    "description": {
+      "en": "Get random recipe",
+      "zh": "随机抽取食谱, 查询食物做法, 数据来源HowToCook"
+    },
+    "service": {
+      "required": [
+        "cron",
+        "logger"
+      ]
+    }
+  },
+  "author": {
+    "name": "NyaKoishi",
+    "email": "nyakoishi@qq.com",
+    "url": "https://github.com/CatKoishi"
+  },
+  "homepage": "https://github.com/CatKoishi/koishi-plugin-l4d2-query",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CatKoishi/koishi-plugin-l4d2-query"
+  },
   "license": "MIT",
   "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "food"
   ],
   "devDependencies": {},
   "peerDependencies": {
